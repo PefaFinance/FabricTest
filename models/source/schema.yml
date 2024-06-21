@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+- name: PefaDWH
+  description: Warehouse Fabric 
+  database: PefaDWH
+  schema: lake
+  tables:
+    - name: casy_artikel
+      description: article masterdata from Casymir
+      identifier: casy_artikel
+      columns:
+        - name: ArtNr
+          description: ArticleNo - Artikelnummer
+        - name: AnLager
+          description: OnStock - article is inventory-managed
+        - name: ArtBez
+          description: ArticleName - description of article (name)
+        - name: ArtEPreis
+          description: PurchasingPrice - average purchasing price
+  
+    - name: casy_lagerbewegung
+    - name: date_table
+    - name: casy_kststamm
+    
+
+  
