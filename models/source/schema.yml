@@ -3,12 +3,12 @@ version: 2
 sources:
 - name: PefaDWH
   description: Warehouse Fabric 
-  database: PefaDWH
-  schema: lake
+  database: PefaX
+  schema: dbo
   tables:
     - name: casy_artikel
       description: article masterdata from Casymir
-      identifier: casy_artikel
+      identifier: CASY_Artikel
       columns:
         - name: ArtNr
           description: ArticleNo - Artikelnummer
